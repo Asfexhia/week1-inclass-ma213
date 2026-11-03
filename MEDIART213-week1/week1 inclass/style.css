@@ -199,6 +199,33 @@ h2 span { color: #e85da7; }
     line-height: 1.7;
 }
 .card-spark { position: absolute; right: 22px; top: 17px; color: rgba(106, 77, 230, .55); font-size: 1.15rem; }
+.visual-notes { padding: 88px 0 100px; background: #f0e9e9; }
+.visual-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.visual-card {
+    position: relative;
+    display: grid;
+    min-height: 330px;
+    margin: 0;
+    overflow: hidden;
+    place-items: center;
+    border: 1px solid rgba(37, 35, 60, .08);
+    border-radius: 9px;
+    background: #fbf8f5;
+}
+.visual-card img { display: block; mix-blend-mode: multiply; }
+.visual-object img { width: min(78%, 300px); }
+.visual-blur { background: #fffaf9; }
+.visual-blur img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.visual-card figcaption {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    left: 20px;
+    color: var(--muted);
+    font-family: 'Fraunces', serif;
+    font-size: .95rem;
+    font-style: italic;
+}
 .daily-life { padding: 100px 0 112px; background: #e8e2d9; }
 .prompt-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
 .prompt-card {
@@ -245,6 +272,7 @@ h2 span { color: #e85da7; }
     .hero-art { width: min(100%, 620px); margin: 0 auto; }
     .hero-note { display: none; }
     .prompt-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .visual-card { min-height: 280px; }
 }
 
 @media (max-width: 560px) {
@@ -254,13 +282,14 @@ h2 span { color: #e85da7; }
     .hero { min-height: 0; padding: 60px 24px 70px; }
     h1 { font-size: clamp(4rem, 17vw, 5.5rem); }
     .section-wrap { width: min(100% - 36px, 420px); }
-    .reflections, .daily-life { padding-top: 72px; padding-bottom: 78px; }
+    .reflections, .daily-life, .visual-notes { padding-top: 72px; padding-bottom: 78px; }
     .section-heading { align-items: start; flex-direction: column; gap: 14px; margin-bottom: 27px; }
-    .answer-grid, .prompt-grid { grid-template-columns: 1fr; }
+    .answer-grid, .prompt-grid, .visual-grid { grid-template-columns: 1fr; }
     .answer-card { min-height: 0; padding: 23px; }
     .card-number { margin-bottom: 19px; }
     .prompt-card { min-height: 0; }
     .prompt-card h3 { min-height: 0; }
+    .visual-card { min-height: 250px; }
     .site-footer { align-items: flex-start; flex-direction: column; gap: 9px; }
 }
 
