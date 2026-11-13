@@ -3,145 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f5f0e7">
-    <title>The Listening Commons — A future worth entering</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#c9d8f4">
+    <meta name="description" content="A small, dreamy corner of the internet where you can simply exist, breathe, and wander.">
+    <title>The Soft Escape — A little world to simply be</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="soft-escape.css">
 </head>
-<body>
-    <a class="skip-link" href="#main">Skip to the future</a>
-    <header class="site-header">
-        <a class="wordmark" href="index.html" aria-label="The Listening Commons home">LC<span>✳</span></a>
-        <p class="header-label">A neighborhood for being human <span>·</span> 2045</p>
-        <nav class="site-nav" aria-label="Main navigation">
-            <a href="commons.html">The Commons <span aria-hidden="true">↗</span></a>
-            <a href="garden.html">The Listening Garden <span aria-hidden="true">↗</span></a>
+<body class="gateway-page">
+    <a class="skip-link" href="#main">Skip to the world</a>
+    <header class="gateway-nav">
+        <a class="brand" href="index.html">THE SOFT ESCAPE<span aria-hidden="true">✳</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#about">ABOUT THIS WORLD</a>
+            <a href="garden.html">EXPLORE</a>
+            <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Turn ambient sound on"><span aria-hidden="true">♫</span> <span class="sound-label">SOUND OFF</span></button>
         </nav>
     </header>
 
     <main id="main">
-        <section class="hero">
+        <section class="gateway-hero" aria-labelledby="gateway-title">
+            <div class="gateway-sky" aria-hidden="true">
+                <div class="sky-glow"></div>
+                <div class="stars" id="gateway-stars"></div>
+                <div class="gateway-cloud cloud-a"></div>
+                <div class="gateway-cloud cloud-b"></div>
+                <div class="gateway-cloud cloud-c"></div>
+                <div class="island island-far"><span class="island-tree">♣</span><i class="island-flower">✿</i></div>
+                <div class="island island-left"><span class="island-tree">♣</span><i class="island-flower">✿</i><i class="island-flower second">✿</i></div>
+                <div class="island island-right"><span class="island-tree">♣</span><i class="island-flower">✿</i></div>
+                <div class="island island-main"><span class="tiny-tree tree-one">♣</span><span class="tiny-tree tree-two">♣</span><span class="tiny-flower flower-one">✿</span><span class="tiny-flower flower-two">✿</span><span class="island-rock"></span></div>
+                <span class="little-moon" aria-hidden="true">☾</span>
+            </div>
             <div class="hero-copy">
-                <p class="eyebrow"><span class="live-dot"></span> A small doorway into a shared future</p>
-                <h1>A softer<br>kind of <em>network.</em></h1>
-                <p class="hero-description">In 2045, the internet is a place you can arrive without needing to perform. A neighborhood of stories, open doors, and technology that knows when to step aside.</p>
-                <div class="hero-actions"><a class="button-link" href="#community">Grow something together <span aria-hidden="true">↓</span></a><a class="text-link" href="garden.html">ENTER THE GARDEN <span aria-hidden="true">↗</span></a></div>
-                <p class="hero-aside">No feed to keep up with. No one to become.</p>
+                <p class="hero-kicker"><span aria-hidden="true">✧</span> A small doorway to somewhere softer</p>
+                <h1 id="gateway-title">You don't have<br>to do anything <em>here.</em></h1>
+                <p class="hero-subtitle">Just exist. Breathe. Wander.</p>
+                <a class="enter-button" href="garden.html">ENTER THE SOFT WORLD <span aria-hidden="true">→</span></a>
             </div>
-            <div class="world-art" role="img" aria-label="An imagined neighborhood of connected warm-colored rooms beneath a twilight sky">
-                <div class="sun"></div>
-                <span class="star star-one">✳</span><span class="star star-two">✳</span>
-                <div class="landscape">
-                    <div class="house house-left"><span class="window"></span><span class="door"></span></div>
-                    <div class="house house-center"><span class="window"></span><span class="door"></span></div>
-                    <div class="house house-right"><span class="window"></span><span class="door"></span></div>
-                    <div class="path"></div>
-                    <span class="plant plant-one">✿</span><span class="plant plant-two">✿</span>
-                </div>
-                <p class="art-caption">A place held in common, never owned.</p>
-            </div>
+            <a class="scroll-hint" href="#about"><span aria-hidden="true">↓</span> TAKE YOUR TIME</a>
         </section>
 
-        <section class="manifesto section-wrap" aria-labelledby="manifesto-title">
-            <div class="section-heading">
-                <div><p class="eyebrow">01 — What if we designed for care?</p><h2 id="manifesto-title">Connection, at human speed<span>.</span></h2></div>
-                <p class="section-intro">A future built from the small things I want to protect: attention, choice, and time with one another.</p>
+        <section class="gateway-invitation" id="about" aria-labelledby="invitation-title">
+            <div class="invitation-copy">
+                <p class="section-eyebrow">A world without a to-do list</p>
+                <h2 id="invitation-title">Nothing to prove.<br><em>Nowhere to be.</em></h2>
+                <p>This little corner of the internet is yours to explore at your own pace. Follow a bubble, listen to the quiet, or simply stay for a while. Nothing here needs to be earned.</p>
             </div>
-            <div class="values-row">
-                <article class="value-card value-lilac"><span class="value-number">01 / YOURS</span><h3>Your story stays yours.</h3><p>Share only what you choose. Your memories don't become somebody else's product.</p></article>
-                <article class="value-card value-peach"><span class="value-number">02 / TOGETHER</span><h3>Technology makes room.</h3><p>Tools help neighbors find one another, then get quiet so people can actually meet.</p></article>
-                <article class="value-card value-yellow"><span class="value-number">03 / SLOWLY</span><h3>There is no rush.</h3><p>No streaks, rankings, or infinite scroll. Leave whenever you need to; the door stays open.</p></article>
+            <div class="preview-cards" aria-label="Ways to wander">
+                <a class="preview-card float-card" href="garden.html#bubble-playground"><span class="card-symbol" aria-hidden="true">◌</span><span class="card-label">FLOAT</span><span class="card-description">Let your thoughts drift.</span><span class="card-arrow" aria-hidden="true">↗</span></a>
+                <a class="preview-card play-card" href="garden.html#cloud-clay"><span class="card-symbol" aria-hidden="true">✳</span><span class="card-label">PLAY</span><span class="card-description">Feel something with your hands.</span><span class="card-arrow" aria-hidden="true">↗</span></a>
+                <a class="preview-card rest-card" href="garden.html#let-it-go"><span class="card-symbol" aria-hidden="true">☾</span><span class="card-label">REST</span><span class="card-description">Stay here as long as you want.</span><span class="card-arrow" aria-hidden="true">↗</span></a>
             </div>
-        </section>
-
-        <section class="community-section" id="community" aria-labelledby="community-title">
-            <div class="community-vine vine-left" aria-hidden="true">〰<span>✿</span></div>
-            <div class="community-vine vine-right" aria-hidden="true">〰<span>✳</span></div>
-            <div class="section-wrap community-content">
-                <div class="section-heading">
-                    <div><p class="eyebrow">02 — Make more room for each other</p><h2 id="community-title">Create together, not for attention<span>.</span></h2></div>
-                    <p class="section-intro">No likes, follower counts, or rankings. Just small acts of care that help good ideas take root.</p>
-                </div>
-                <div class="community-actions">
-                    <article class="community-card seed-card">
-                        <span class="community-symbol" aria-hidden="true">✳</span>
-                        <p class="eyebrow">Start something</p>
-                        <h3>Plant a seed</h3>
-                        <p>Share a tiny idea. It doesn't need to be finished to belong here.</p>
-                        <button class="community-button" id="toggle-seed-form" type="button" aria-expanded="false" aria-controls="seed-form">Plant a seed <span aria-hidden="true">＋</span></button>
-                    </article>
-                    <article class="community-card water-card">
-                        <span class="community-symbol" aria-hidden="true">⌁</span>
-                        <p class="eyebrow">Offer a little care</p>
-                        <h3>Water an idea</h3>
-                        <p>Notice what someone is making and help it keep growing.</p>
-                        <a class="community-button button-quiet" href="#shared-seeds">Find an idea <span aria-hidden="true">↓</span></a>
-                    </article>
-                    <article class="community-card circle-card">
-                        <span class="community-symbol" aria-hidden="true">◌</span>
-                        <p class="eyebrow">Find your people</p>
-                        <h3>Join a circle</h3>
-                        <p>Gather around an interest, learn from one another, and make things side by side.</p>
-                        <a class="community-button button-quiet" href="#circles">Meet the circles <span aria-hidden="true">↓</span></a>
-                    </article>
-                </div>
-
-                <form class="seed-form" id="seed-form" hidden>
-                    <label for="seed-title">What would you like to grow?</label>
-                    <input id="seed-title" name="title" maxlength="60" placeholder="A neighborhood recipe zine…" required>
-                    <label for="seed-note">A little more about it <span>(optional)</span></label>
-                    <textarea id="seed-note" name="note" maxlength="180" rows="2" placeholder="Maybe we can collect recipes from every window on the block."></textarea>
-                    <div class="form-actions"><button class="community-button" type="submit">Plant this idea <span aria-hidden="true">✳</span></button><button class="cancel-button" id="cancel-seed-form" type="button">Maybe later</button></div>
-                </form>
-
-                <div class="shared-seeds" id="shared-seeds">
-                    <div class="subsection-heading"><div><p class="eyebrow">Seeds from the neighborhood</p><h3>Ideas still becoming</h3></div><p class="no-metrics">No scores. No race. Just good company.</p></div>
-                    <div class="seed-list" id="seed-list" aria-live="polite">
-                        <article class="idea-card">
-                            <span class="idea-flower flower-cosmos" aria-hidden="true">✿</span><div class="idea-copy"><p class="idea-byline">A neighbor is imagining</p><h4>A little library of useful things</h4><p>Borrow a drill, a book, or half an hour of help. Leave something kind for the next person.</p></div>
-                            <button class="water-button" type="button" aria-label="Water the idea: A little library of useful things"><span aria-hidden="true"></span> Water this idea</button>
-                        </article>
-                        <article class="idea-card">
-                            <span class="idea-flower flower-daisy" aria-hidden="true">✿</span><div class="idea-copy"><p class="idea-byline">A neighbor is imagining</p><h4>Stories told through sounds</h4><p>Make a tiny audio map of the places that make our block feel like home.</p></div>
-                            <button class="water-button" type="button" aria-label="Water the idea: Stories told through sounds"><span aria-hidden="true"></span> Water this idea</button>
-                        </article>
-                    </div>
-                </div>
-                <div class="circles" id="circles">
-                    <div class="subsection-heading"><div><p class="eyebrow">Small circles, open doors</p><h3>Find a way to make together</h3></div></div>
-                    <div class="circle-list">
-                        <article class="circle-card-item"><span class="circle-art circle-art-paper" aria-hidden="true">✂</span><div><h4>Slow craft club</h4><p>Bring a half-finished thing. Leave with new ideas and kind company.</p></div><button class="join-button" type="button" aria-pressed="false">Join this circle <span aria-hidden="true">↗</span></button></article>
-                        <article class="circle-card-item"><span class="circle-art circle-art-sound" aria-hidden="true">♫</span><div><h4>Neighborhood sound walks</h4><p>Listen closely, collect everyday sounds, and make a map together.</p></div><button class="join-button" type="button" aria-pressed="false">Join this circle <span aria-hidden="true">↗</span></button></article>
-                        <article class="circle-card-item"><span class="circle-art circle-art-green" aria-hidden="true">♧</span><div><h4>Balcony gardeners</h4><p>Trade cuttings, growing tips, and whatever the season brings.</p></div><button class="join-button" type="button" aria-pressed="false">Join this circle <span aria-hidden="true">↗</span></button></article>
-                    </div>
-                </div>
-                <p class="community-status" id="community-status" role="status" aria-live="polite"></p>
-                <a class="garden-door" href="garden.html"><span><span class="eyebrow">Your next small act of care</span><strong>ENTER THE GARDEN</strong><span>Choose a flower, plant a seed, and grow a place of your own.</span></span><span class="door-arrow" aria-hidden="true">↗</span></a>
-            </div>
-        </section>
-
-        <section class="places">
-            <div class="section-wrap">
-                <div class="section-heading">
-                    <div><p class="eyebrow">02 — Find your way in</p><h2>Two rooms, many ways to belong<span>.</span></h2></div>
-                    <p class="section-intro">Both places work online and in the neighborhood. Come to speak, listen, make, or simply be here.</p>
-                </div>
-                <div class="place-list">
-                    <article class="place-card place-commons">
-                        <div class="place-number">01</div><div class="place-copy"><p class="eyebrow">Gather / share / make</p><h3>The Commons</h3><p>A welcoming table for stories, skill-swaps, and questions that don't need instant answers.</p></div>
-                        <a class="round-link" href="commons.html" aria-label="Explore the Commons">↗</a>
-                    </article>
-                    <article class="place-card place-garden">
-                        <div class="place-number">02</div><div class="place-copy"><p class="eyebrow">Pause / listen / grow</p><h3>The Listening Garden</h3><p>A quieter path for voice notes, memories, and the kind of listening that takes its time.</p></div>
-                        <a class="round-link" href="garden.html" aria-label="Explore the Listening Garden">↗</a>
-                    </article>
-                </div>
-            </div>
+            <p class="closing-note">No goals. No timers. Just a little room to be. <span aria-hidden="true">✧</span></p>
         </section>
     </main>
-    <footer class="site-footer"><a class="wordmark" href="index.html">LC<span>✳</span></a><p>A future vision by me, for all of us.</p><a href="commons.html">The door is open <span aria-hidden="true">↗</span></a></footer>
-    <script src="community.js" defer></script>
+    <footer class="gateway-footer"><a class="brand" href="index.html">THE SOFT ESCAPE<span aria-hidden="true">✳</span></a><p>Made for the moments in between.</p><a href="garden.html">Wander a little more <span aria-hidden="true">↗</span></a></footer>
+    <script src="soft-escape.js" defer></script>
 </body>
 </html>
