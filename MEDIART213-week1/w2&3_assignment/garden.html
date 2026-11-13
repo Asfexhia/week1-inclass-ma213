@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f0e7">
+    <title>The Listening Garden — The Listening Commons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to the garden</a>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="The Listening Commons home">LC<span>✳</span></a>
+        <p class="header-label">A neighborhood for being human <span>·</span> 2045</p>
+        <nav class="site-nav" aria-label="Main navigation"><a href="commons.html">The Commons <span aria-hidden="true">↗</span></a><a href="garden.html" aria-current="page">The Listening Garden <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main">
+        <section class="subhero garden-hero">
+            <div class="subhero-copy"><p class="eyebrow">Room two / grow at your own pace</p><h1>A garden<br>of <em>your own.</em></h1><p class="hero-description">Choose what to plant, water it when you like, and trade a seed with a neighbor. There is no perfect garden—just a little space that grows with you.</p><a class="text-link" href="#my-garden">Tend your garden <span aria-hidden="true">↓</span></a></div>
+            <div class="garden-art" role="img" aria-label="A dreamlike garden with oversized flowers, winding vines, and a butterfly"><div class="moon"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="flower flower-one"><i></i></div><div class="flower flower-two"><i></i></div><div class="flower flower-three"><i></i></div><div class="garden-path"></div><span class="garden-word">breathe</span><span class="art-butterfly" aria-hidden="true">🦋</span><span class="art-vine" aria-hidden="true">〰</span></div>
+        </section>
+        <section class="garden-workshop" id="my-garden" aria-labelledby="my-garden-title">
+            <div class="section-wrap">
+                <div class="section-heading"><div><p class="eyebrow">05 — Your little patch of possibility</p><h2 id="my-garden-title">What would you like to grow<span>?</span></h2></div><p class="section-intro">Your garden is saved on this device. Plant a seed, offer it water, or exchange a seed with a neighbor.</p></div>
+                <div class="garden-controls">
+                    <label class="flower-picker" for="flower-choice"><span>Choose a flower</span><select id="flower-choice"><option value="daisy">Daisy — bright &amp; open</option><option value="cosmos">Cosmos — curious &amp; free</option><option value="tulip">Tulip — gentle &amp; steady</option><option value="moonflower">Moonflower — quiet &amp; dreamy</option></select></label>
+                    <button class="garden-action plant-action" id="plant-flower" type="button"><span aria-hidden="true">✳</span> Plant a seed</button>
+                    <button class="garden-action water-action" id="water-garden" type="button"><span aria-hidden="true"></span> Water my garden</button>
+                    <button class="garden-action exchange-action" id="exchange-seed" type="button"><span aria-hidden="true">↔</span> Exchange a seed</button>
+                </div>
+                <p class="garden-message" id="garden-message" role="status" aria-live="polite">A patch of soil is waiting for your first idea.</p>
+                <div class="personal-garden" id="personal-garden" aria-label="Your personal garden" aria-live="polite">
+                    <div class="garden-vine vine-one" aria-hidden="true"></div><div class="garden-vine vine-two" aria-hidden="true"></div>
+                    <span class="garden-butterfly butterfly-one" aria-hidden="true">🦋</span><span class="garden-butterfly butterfly-two" aria-hidden="true">🦋</span>
+                    <div class="soil"></div><div class="garden-empty"><span aria-hidden="true">✿</span><p>Your first flower can start here.</p></div>
+                </div>
+                <div class="exchange-note"><span class="exchange-spark" aria-hidden="true">✳</span><p><strong>A seed for a seed.</strong> When you exchange, a neighbor's favorite flower becomes yours to plant. Your own garden can offer a seed to someone else, too.</p></div>
+            </div>
+        </section>
+        <section class="section-wrap path-section" id="path">
+            <div class="section-heading"><div><p class="eyebrow">04 — A slow walk through</p><h2>Listen with your whole self<span>.</span></h2></div><p class="section-intro">Some things are easier to share when there is no audience to impress and no clock counting down.</p></div>
+            <div class="path-steps">
+                <article class="path-step"><span class="step-index">STOP 01</span><div class="step-mark mark-sun">☼</div><h3>Leave a voice note</h3><p>Record a sound, a thought, or the birds outside your window. Keep it for yourself or offer it to the garden.</p></article>
+                <article class="path-step"><span class="step-index">STOP 02</span><div class="step-mark mark-wave">≈</div><h3>Listen without replying</h3><p>Hear a neighbor's chosen story. No likes, counters, or suggested response—just a moment of attention.</p></article>
+                <article class="path-step"><span class="step-index">STOP 03</span><div class="step-mark mark-flower">✿</div><h3>Carry something with you</h3><p>Save a line that stayed with you. The garden never assumes a story is yours to retell.</p></article>
+            </div>
+        </section>
+        <section class="garden-pause"><div class="section-wrap pause-content"><p class="eyebrow">A little permission</p><h2>You don't have to turn every feeling into content.</h2><p>Some memories are just for you. Some silences are full. The garden will still be here when you're ready.</p><a class="button-link" href="commons.html">Return to the Commons <span aria-hidden="true">↗</span></a></div></section>
+        <section class="section-wrap garden-footer-note"><p class="eyebrow">The doorway goes both ways</p><p>Whenever you're done wandering, the Commons is warm and the table is still set.</p><a class="text-link" href="index.html">Back to the neighborhood <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer"><a class="wordmark" href="index.html">LC<span>✳</span></a><p>Take what you need. Leave the rest.</p><a href="commons.html">Find the table <span aria-hidden="true">↗</span></a></footer>
+    <script src="garden.js" defer></script>
+</body>
+</html>
